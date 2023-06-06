@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<title>Contact Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="contactus.css">
+<link rel="stylesheet" href="services.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <a href="home.html" class="w3-bar-item w3-button">FoodDessert</a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right" id="navlinks">
+        <a href="home.html" class="w3-bar-item w3-button">Home</a>
+        <a href="services.html" class="w3-bar-item w3-button">Services</a>
+        <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
+        <a href="contactus.html" class="w3-bar-item w3-button">Contact Us</a>
+      </div>
+      <div class="w3-right button-container w3-hide w3-button" id="menubutton">
+        <img src="menuicon.png" alt="">
+      </div>
+    </div>
+    <div class="mobilemenu">
+      <a href="home.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="services.html" class="w3-bar-item w3-button">SERVICES</a>
+      <a href="aboutus.html" class="w3-bar-item w3-button">ABOUT US</a>
+      <a href="contactus.html" class="w3-bar-item w3-button">CONTACT US</a>
+    </div>
+  </div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <h1 style="text-align: center;"><b>CONTACT US </b></h1>
+    
+  </div>
+
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+    </div>
+
+
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="patana.jpg" style="width:100%">
+        <div class="w3-container">
+          <h3>Ken Daryl Patana</h3>
+          <p class="w3-opacity">CEO</p>
+          <p>We expect all of our employees to remain focused and continue striving towards our goals. The Executive Leadership Team is here to provide support and guidance.” As we look ahead, it's important to stay diligent and committed to our objectives. Let's keep working together towards success!</p>
+        <p>kendarylpatana14@gmail.com</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="gonzales.jpg"  style="width:100%">
+        <div class="w3-container">
+          <h3>Mc Larry Gonzales</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>We expect all of our employees to remain focused and continue striving towards our goals. The Executive Leadership Team is here to provide support and guidance.” As we look ahead, it's important to stay diligent and committed to our objectives. Let's keep working together towards success!</p>
+          <p>mclarrygonzales@gmail.com</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+  </div>
+
+  <form class="w3-container" action="/action_page.php" target="_blank">
+    <div class="w3-section">
+      <label>Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+    </div>
+    <div class="w3-section">
+      <label>Email</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+    </div>
+  
+    <div class="w3-section">
+      <label>Message</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+    </div>
+    <a href="order.html" class="w3-bar-item w3-button">Send Message</a>
+  </form>
+
+</div>
+
+<!-- Footer -->
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+    <p>FoodDessert <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">.ph</a></p>
+  </footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+<script src="navbar.js"></script>
+</body>
+</html>

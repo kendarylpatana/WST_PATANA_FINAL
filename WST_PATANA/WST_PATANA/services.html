@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="services.css">
+<style>
+body, html {height: 100%}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("mangofloat.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <a href="home.html" class="w3-bar-item w3-button">FoodDessert</a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right" id="navlinks">
+        <a href="home.html" class="w3-bar-item w3-button">Home</a>
+        <a href="services.html" class="w3-bar-item w3-button">Services</a>
+        <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
+        <a href="contactus.html" class="w3-bar-item w3-button">Contact Us</a>
+      </div>
+      <div class="w3-right button-container w3-hide w3-button" id="menubutton">
+        <img src="menuicon.png" alt="">
+      </div>
+    </div>
+    <div class="mobilemenu">
+      <a href="home.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="services.html" class="w3-bar-item w3-button">SERVICES</a>
+      <a href="aboutus.html" class="w3-bar-item w3-button">ABOUT US</a>
+      <a href="contactus.html" class="w3-bar-item w3-button">CONTACT US</a>
+    </div>
+  </div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px"><br>FoodDessert</span>
+    <p><a href="home.html" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-white w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Services</h1>
+    <p>USTP  food caterer specializing in high-quality Dessert for various events.</p>
+    <p><strong>USTP, Cagayan de Oro, Philippines</strong><img src="chocolate.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>Filling every occasion with great food and service. 🍽👨‍🍳🤵 DM us!</p>
+    <p>Location: USTP,Cagayan de Oro, Philippines</p>
+    <p>Number : 000000</p>
+    <p>Email : fooddessert@gmail.com</p>
+    <img src="mango tapioca.png" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+    
+   
+    
+  </div>
+</div>
+
+
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-whitew3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at some address at some place or call us at 00000000</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Number Of Pieces" required name="Order"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Time to Deliver" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Location to Deliver" required name="Location"></p>
+      <a href="order.html" class="w3-bar-item w3-button">Send Message</a>
+      
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Fooddessert<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">.ph</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+<script src="navbar.js"></script>
+</body>
+</html>
